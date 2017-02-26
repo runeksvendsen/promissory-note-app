@@ -1,0 +1,57 @@
+#resolver: lts-7.18
+resolver: nightly-2016-12-05
+
+# Needed for proto-lens stuff
+explicit-setup-deps:
+  promissory-note-types: true
+
+packages:
+## App
+- 'rbpcp-api'
+- 'promissory-note-types'
+- 'paychan-datastore'
+#- '/Users/rune/IdeaProjects/bitcoin-payment-protocol'
+
+## Extra deps
+- location:
+    git: https://github.com/runeksvendsen/haskoin.git
+    commit: 9add83fd4aa8bc960a15a1d24e6e831981a9f8a4
+  extra-dep: true
+  subdirs:
+    - haskoin-core
+    - haskoin-node
+    - haskoin-wallet
+- location:
+    git: https://github.com/runeksvendsen/bitcoin-payment-channel.git
+    commit: 29fecea1b0727f672304a4c343b57d1757f71bf2
+  extra-dep: true
+- location:
+    git: https://github.com/runeksvendsen/bitcoin-payment-protocol.git
+    commit: da60b36560ba48642f0c80f2944921d2ce7ef37d
+  extra-dep: true
+- location:
+    git: https://github.com/brendanhay/gogol.git
+    commit: a07562bccc9a7be788b08908a7fe5d9b1fa1784a
+  extra-dep: true
+  subdirs:
+    - gogol
+    - core
+    - gogol-datastore
+- location:
+    git: https://github.com/tsuraan/bytestring-arbitrary.git
+    commit: ce6234d7204d8f1faa3a7c05f4802ead210245ce
+  extra-dep: true
+
+extra-deps:
+- murmur3-1.0.3
+- pbkdf-1.1.1.1
+- secp256k1-0.4.6
+- cryptohash-sha256-0.11.100.1
+- proto-lens-0.1.0.5
+#- proto-lens-protoc-0.1.0.5
+- proto-lens-descriptors-0.1.0.5
+#- gogol-0.1.0
+#- gogol-datastore-0.1.0
+
+flags: {}
+extra-package-dbs: []

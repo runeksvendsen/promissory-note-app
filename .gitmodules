@@ -1,0 +1,9 @@
+[submodule "paychan-datastore"]
+	path = paychan-datastore
+	url = https://github.com/runeksvendsen/paychan-datastore.git
+[submodule "rbpcp-api"]
+	path = rbpcp-api
+	url = https://github.com/runeksvendsen/rbpcp-api.git
+[submodule "promissory-note-types"]
+	path = promissory-note-types
+	url = https://github.com/runeksvendsen/promissory-note-types.git
