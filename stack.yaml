@@ -31,7 +31,7 @@ packages:
   extra-dep: true
 - location:
     git: https://github.com/brendanhay/gogol.git
-    commit: a07562bccc9a7be788b08908a7fe5d9b1fa1784a
+    commit: 281fd577468a01238e33c5e6acfe78945129322d
   extra-dep: true
   subdirs:
     - gogol
