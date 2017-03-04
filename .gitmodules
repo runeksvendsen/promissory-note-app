@@ -7,3 +7,6 @@
 [submodule "promissory-note-types"]
 	path = promissory-note-types
 	url = https://github.com/runeksvendsen/promissory-note-types.git
+[submodule "restful-payment-channel-server"]
+	path = restful-payment-channel-server
+	url = https://github.com/runeksvendsen/restful-payment-channel-server.git
